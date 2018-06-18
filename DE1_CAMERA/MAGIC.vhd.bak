@@ -1,0 +1,29 @@
+--25.5.14
+--Boris Braginsky
+--==========Library===========
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_signed.all; 
+--use ieee.std_logic_arith.all;
+
+Entity MAGIC is port(
+
+	oRed, oGreen, oBlue: out std_logic_vector(11 downto 0); 
+	oDVAL: out std_logic; 
+	iX_Cont,	iY_Cont: in std_logic_vector(10 downto 0); 
+	iDATA: in std_logic_vector(11 downto 0); 
+	iDVAL, iCLK, iRST: in std_logic;
+	--added by amir
+	
+	iRGB_Arbitrator: in std_logic;
+	iHistogram_SW : in std_logic
+);
+end MAGIC;
+
+architecture behv of MAGIC is
+
+begin
+
+end behv;
+
